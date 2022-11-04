@@ -1,0 +1,120 @@
+.container {
+  width: var(--container-width-lg);
+  margin: auto;
+}
+
+.nav-container {
+  width: 100%;
+  background: var(--primary-color);
+  position: fixed;
+  z-index: 99;
+}
+
+.nav {
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.nav img {
+  height: 50px;
+}
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav .nav-icons {
+  font-size: 1.5rem;
+  padding: 3px;
+
+  color: var(--white-color);
+  gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  display: none;
+}
+
+.nav a {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  transition: var(--transition);
+}
+
+.nav li.active {
+  text-decoration: underline;
+}
+
+.nav li:hover {
+  color: var(--grey-color);
+}
+
+.cart-number {
+  padding: 0 3px;
+  color: var(--white-color);
+  font-weight: lighter;
+  position: relative;
+  background: var(--error-color);
+  border-radius: 5px;
+  top: -10px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .nav-btn {
+    display: block;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    color: var(--white-color);
+  }
+
+  ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 40vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background: var(--primary-color);
+    transition: var(--transition);
+    transform: translateY(-100vh);
+  }
+
+  .responsive-nav {
+    transform: none;
+  }
+
+  .close-nav {
+    position: absolute;
+    top: 1.4rem;
+    right: 0;
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+}
