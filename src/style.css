@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #800f2f;
+  --accent-color: #ffccd5;
+  --white-color: #ffffff;
+  --grey-color: #b8b8b8;
+  --black-color: #323031;
+  --error-color: #f04438;
+  --warning-color: #f09a38;
+  --success-color: #039855;
+
+  --container-width-lg: 92%;
+  --container-width-md: 92%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
